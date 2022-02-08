@@ -3,7 +3,7 @@
 from traits.api import HasTraits, Str, Range, Enum, CInt, Instance, String, Int, Button
 from traitsui.api import Item, View, Group, UItem, TextEditor, HGroup, VGroup, HSplit, VSplit, CodeEditor
 
-class Simple(HasTraits):
+class XStudio(HasTraits):
     
   test = Str()
   model = Str()
@@ -63,4 +63,4 @@ class Simple(HasTraits):
   width = 1
   )
 
-Simple().configure_traits(view = view)
+XStudio().configure_traits()
