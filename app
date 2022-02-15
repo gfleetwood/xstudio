@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://docs.enthought.com/traitsui/traitsui_user_manual/view.html
+
 from traits.api import HasTraits, Str, Range, Enum, CInt, Instance, String, Int, Button
 from traitsui.api import Item, View, Group, UItem, TextEditor, HGroup, VGroup, HSplit, VSplit, CodeEditor
 
@@ -58,6 +60,7 @@ class XStudio(HasTraits):
 
   view = View(
   VSplit(row1, row2),
+  title = 'XStudio',
   resizable = True,
   height = 1, 
   width = 1
